@@ -1,0 +1,26 @@
+GET http://localhost:3000/characters
+
+###
+
+GET http://localhost:3000/characters/1
+
+###
+
+POST http://localhost:3000/characters
+Content-Type: application/json
+
+{
+  "name": "Arya",
+  "lastName": "Stark"
+}
+###
+
+PATCH http://localhost:3000/characters/63b8b998bb54120dac7aae31
+Content-Type: application/json
+
+{
+  "name": "Sansa"
+}
+###
+
+DELETE http://localhost:3000/characters/63b8cf62186d45f83e3745b8
