@@ -4,13 +4,20 @@
   "description": "Example of an API made with Node, Express, and Mongo",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config ./index.js"
+    "dev": "nodemon -r dotenv/config ./index.js",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix"
   },
   "keywords": [],
   "author": "Antonio Barrios Leon",
   "license": "ISC",
   "devDependencies": {
     "dotenv": "16.0.3",
+    "eslint": "^8.31.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
     "nodemon": "2.0.20"
   },
   "dependencies": {

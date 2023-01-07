@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const app = express()
 
 const DATABASE_URL = process.env.DATABASE_URL || 'mongodb://localhost:27017/game-of-thrones'
-const SERVER_PORT = process.env.SERVER_PORT || 3000 
+const SERVER_PORT = process.env.SERVER_PORT || 3000
 
 mongoose.set('strictQuery', true)
 mongoose
